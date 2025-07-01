@@ -36,16 +36,17 @@ p {
   display: block;
   margin: 10px 0;
   padding: 10px;
-  background: #ff66b2;
+  background: #ffc0cb; /* baby pink */
   color: white;
   text-decoration: none;
   border-radius: 5px;
   font-weight: bold;
   transition: background 0.3s ease, transform 0.2s;
 }
+}
 
 .links a:hover {
-  background: #e055a1;
+  background: #f48fb1; /* soft rose hover */
   transform: scale(1.03);
 }
 
