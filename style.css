@@ -1,6 +1,6 @@
 body {
-  background: #fff0f5; /* Light pink background */
-  font-family: 'Segoe UI', sans-serif;
+  background: #fff0f5; /* soft pink */
+  font-family: 'Poppins', sans-serif;
   margin: 0;
   padding: 0;
   color: #333;
@@ -21,8 +21,10 @@ h1 {
   margin-bottom: 10px;
 }
 
-h1 span {
-  color: #ff66b2; /* PINK */
+.name {
+  font-family: 'Dancing Script', cursive;
+  font-size: 2.8rem;
+  color: #ff66b2;
 }
 
 p {
@@ -34,16 +36,17 @@ p {
   display: block;
   margin: 10px 0;
   padding: 10px;
-  background: #ff66b2; /* PINK */
+  background: #ff66b2; /* pink */
   color: white;
   text-decoration: none;
   border-radius: 5px;
   font-weight: bold;
-  transition: background 0.3s ease;
+  transition: background 0.3s ease, transform 0.2s;
 }
 
 .links a:hover {
-  background: #e055a1; /* darker pink on hover */
+  background: #e055a1; /* darker pink */
+  transform: scale(1.03);
 }
 
 .note {
