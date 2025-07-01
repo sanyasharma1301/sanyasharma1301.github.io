@@ -64,3 +64,20 @@ p {
   font-size: 0.9rem;
   color: #888;
 }
+.section-heading {
+  font-size: 1.3rem;
+  color: #ff66b2;
+  margin-top: 40px;
+}
+
+.blog-link a {
+  color: #d63384;
+  text-decoration: none;
+  font-weight: 600;
+  transition: color 0.3s ease;
+}
+
+.blog-link a:hover {
+  text-decoration: underline;
+  color: #c2185b;
+}
