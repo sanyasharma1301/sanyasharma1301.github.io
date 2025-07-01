@@ -17,14 +17,15 @@ body {
 }
 
 .profile-pic {
-  width: 140px;
-  height: 180px;
+  width: 160px;
+  height: 160px;
   object-fit: cover;
-  border-radius: 20px;
+  border-radius: 50%; 
   border: 3px solid #ffc0cb;
   margin-bottom: 20px;
   box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
 }
+
 
 .name {
   font-family: 'Dancing Script', cursive;
