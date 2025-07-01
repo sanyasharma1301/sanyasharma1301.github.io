@@ -1,5 +1,5 @@
 body {
-  background: #fff0f5;
+  background: #fff0f5; /* Light pink background */
   font-family: 'Segoe UI', sans-serif;
   margin: 0;
   padding: 0;
@@ -22,7 +22,7 @@ h1 {
 }
 
 h1 span {
-  color: #6c63ff;
+  color: #ff66b2; /* PINK */
 }
 
 p {
@@ -34,15 +34,16 @@ p {
   display: block;
   margin: 10px 0;
   padding: 10px;
-  background: #6c63ff;
+  background: #ff66b2; /* PINK */
   color: white;
   text-decoration: none;
   border-radius: 5px;
   font-weight: bold;
+  transition: background 0.3s ease;
 }
 
 .links a:hover {
-  background: #5a52e8;
+  background: #e055a1; /* darker pink on hover */
 }
 
 .note {
