@@ -1,5 +1,5 @@
 body {
-  background: #fff0f5; /* Light pink */
+  background: #fff0f5;
   font-family: 'Poppins', sans-serif;
   margin: 0;
   padding: 0;
@@ -20,12 +20,17 @@ body {
   width: 160px;
   height: 160px;
   object-fit: cover;
-  border-radius: 50%; 
-  border: 3px solid #ffc0cb;
+  border-radius: 50%;
+  border: 3px solid #ff66b2;
   margin-bottom: 20px;
   box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+  transition: all 0.3s ease;
 }
 
+.profile-pic:hover {
+  box-shadow: 0 0 15px #ff66b2, 0 0 25px #ffc0cb;
+  transform: scale(1.03);
+}
 
 .name {
   font-family: 'Dancing Script', cursive;
@@ -47,38 +52,10 @@ p {
   display: block;
   margin: 10px 0;
   padding: 10px;
-  background: #ffc0cb; /* soft pink */
-  color: black;
+  background: #ffc0cb;
+  color: white;
   text-decoration: none;
   border-radius: 6px;
   font-weight: bold;
-  transition: background 0.3s ease, transform 0.2s;
-}
-
-.links a:hover {
-  background: #f48fb1; /* hover pink */
-  transform: scale(1.03);
-}
-
-.note {
-  margin-top: 30px;
-  font-size: 0.9rem;
-  color: #888;
-}
-.section-heading {
-  font-size: 1.3rem;
-  color: #ff66b2;
-  margin-top: 40px;
-}
-
-.blog-link a {
-  color: #d63384;
-  text-decoration: none;
-  font-weight: 600;
-  transition: color 0.3s ease;
-}
-
-.blog-link a:hover {
-  text-decoration: underline;
-  color: #c2185b;
-}
+  transition: all 0.3s ease;
+  box-shadow:
