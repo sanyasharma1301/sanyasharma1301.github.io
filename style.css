@@ -5,7 +5,6 @@ body {
   padding: 0;
   color: #333;
 }
-
 .container {
   max-width: 600px;
   margin: 80px auto;
@@ -15,7 +14,6 @@ body {
   text-align: center;
   border-radius: 12px;
 }
-
 .profile-pic {
   width: 160px;
   height: 160px;
@@ -26,28 +24,23 @@ body {
   box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
   transition: all 0.3s ease;
 }
-
 .profile-pic:hover {
   box-shadow: 0 0 15px #ff66b2, 0 0 25px #ffc0cb;
   transform: scale(1.03);
 }
-
 .name {
   font-family: 'Dancing Script', cursive;
   font-size: 2.5rem;
   color: #ff66b2;
 }
-
 h1 {
   font-size: 2rem;
   margin-bottom: 10px;
 }
-
 p {
   font-size: 1.1rem;
   margin-bottom: 25px;
 }
-
 .links a {
   display: block;
   margin: 10px 0;
@@ -60,19 +53,16 @@ p {
   transition: all 0.3s ease;
   box-shadow: 0 0 0 transparent;
 }
-
 .links a:hover {
   background: #f48fb1;
   transform: scale(1.03);
   box-shadow: 0 0 15px #ffb6c1, 0 0 25px #ffb6c1;
 }
-
 .note {
   margin-top: 30px;
   font-size: 0.9rem;
   color: #888;
 }
-
 .about {
   margin-top: 40px;
   padding: 20px;
@@ -83,22 +73,45 @@ p {
   line-height: 1.6;
   box-shadow: 0 2px 6px rgba(0, 0, 0, 0.05);
 }
-
 .about p {
   margin-bottom: 15px;
 }
-
 .section-heading {
   font-size: 1.3rem;
   color: #ff66b2;
   margin-bottom: 15px;
 }
 
-/* Fade-in animation */
+/* Fade-in animation with staggered delays */
 .fade-in {
   opacity: 0;
-  transform: translateY(20px);
-  animation: fadeInUp 1s ease forwards;
+  transform: translateY(30px);
+  animation: fadeInUp 0.8s ease forwards;
+}
+
+/* Staggered animation delays */
+.profile-pic.fade-in {
+  animation-delay: 0.2s;
+}
+
+h1.fade-in {
+  animation-delay: 0.4s;
+}
+
+p.fade-in:first-of-type {
+  animation-delay: 0.6s;
+}
+
+.links.fade-in {
+  animation-delay: 0.8s;
+}
+
+.about.fade-in {
+  animation-delay: 1.0s;
+}
+
+.note.fade-in {
+  animation-delay: 1.2s;
 }
 
 @keyframes fadeInUp {
@@ -106,4 +119,9 @@ p {
     opacity: 1;
     transform: translateY(0);
   }
+}
+
+/* Optional: Add a subtle entrance animation to the container */
+.container.fade-in {
+  animation-delay: 0s;
 }
