@@ -1,127 +1,171 @@
 body {
-  background: #fff0f5;
+  background: linear-gradient(135deg, #fff0f5, #ffe4ec);
   font-family: 'Poppins', sans-serif;
   margin: 0;
   padding: 0;
   color: #333;
 }
+
+/* MAIN CONTAINER */
 .container {
-  max-width: 600px;
-  margin: 80px auto;
-  padding: 20px;
+  max-width: 750px;
+  margin: 60px auto;
+  padding: 30px;
   background: white;
-  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+  box-shadow: 0 8px 25px rgba(0, 0, 0, 0.08);
   text-align: center;
-  border-radius: 12px;
+  border-radius: 16px;
 }
+
+/* PROFILE */
 .profile-pic {
   width: 160px;
   height: 160px;
   object-fit: cover;
   border-radius: 50%;
-  border: 3px solid #ff66b2;
+  border: 4px solid #ff66b2;
   margin-bottom: 20px;
-  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+  box-shadow: 0 6px 15px rgba(0, 0, 0, 0.1);
   transition: all 0.3s ease;
 }
+
 .profile-pic:hover {
-  box-shadow: 0 0 15px #ff66b2, 0 0 25px #ffc0cb;
-  transform: scale(1.03);
+  transform: scale(1.05);
+  box-shadow: 0 0 20px #ff66b2, 0 0 35px #ffc0cb;
 }
+
+/* NAME */
 .name {
   font-family: 'Dancing Script', cursive;
-  font-size: 2.5rem;
+  font-size: 2.8rem;
   color: #ff66b2;
 }
+
+/* TEXT */
 h1 {
-  font-size: 2rem;
+  font-size: 2.2rem;
   margin-bottom: 10px;
 }
+
 p {
   font-size: 1.1rem;
-  margin-bottom: 25px;
+  margin-bottom: 20px;
+  line-height: 1.6;
 }
+
+/* LINKS */
 .links a {
   display: block;
   margin: 10px 0;
-  padding: 10px;
+  padding: 12px;
   background: #ffc0cb;
   color: black;
   text-decoration: none;
-  border-radius: 6px;
+  border-radius: 8px;
   font-weight: bold;
   transition: all 0.3s ease;
-  box-shadow: 0 0 0 transparent;
 }
+
 .links a:hover {
   background: #f48fb1;
-  transform: scale(1.03);
-  box-shadow: 0 0 15px #ffb6c1, 0 0 25px #ffb6c1;
+  transform: translateY(-2px) scale(1.03);
+  box-shadow: 0 5px 15px rgba(255, 105, 180, 0.3);
 }
+
+/* SECTION HEADINGS */
+.section-heading {
+  font-size: 1.5rem;
+  color: #ff66b2;
+  margin-bottom: 20px;
+}
+
+/* ABOUT SECTION */
+.about {
+  margin-top: 40px;
+  padding: 25px;
+  background: #ffeaf4;
+  border-radius: 14px;
+  font-size: 0.95rem;
+  color: #444;
+  line-height: 1.7;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.05);
+}
+
+.about p {
+  margin-bottom: 15px;
+}
+
+/* 🔥 PROJECT CARDS (NEW) */
+.projects {
+  margin-top: 40px;
+}
+
+.project-card {
+  background: #fff5f9;
+  padding: 20px;
+  margin: 20px 0;
+  border-radius: 12px;
+  text-align: left;
+  box-shadow: 0 4px 10px rgba(0,0,0,0.06);
+  transition: all 0.3s ease;
+}
+
+.project-card:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 8px 20px rgba(255, 105, 180, 0.2);
+}
+
+.project-card h3 {
+  color: #ff66b2;
+  margin-bottom: 10px;
+}
+
+.project-card p {
+  font-size: 0.95rem;
+  margin-bottom: 10px;
+}
+
+.project-card a {
+  text-decoration: none;
+  color: #d63384;
+  font-weight: bold;
+}
+
+/* SKILLS */
+.skills {
+  margin-top: 40px;
+  padding: 20px;
+  background: #ffeaf4;
+  border-radius: 12px;
+  font-size: 0.95rem;
+}
+
+/* NOTE */
 .note {
   margin-top: 30px;
   font-size: 0.9rem;
   color: #888;
 }
-.about {
-  margin-top: 40px;
-  padding: 20px;
-  background: #ffeaf4;
-  border-radius: 12px;
-  font-size: 0.85rem; /* Changed from 1rem */
-  color: #444;
-  line-height: 1.6;
-  box-shadow: 0 2px 6px rgba(0, 0, 0, 0.05);
-}
-.about p {
-  margin-bottom: 15px;
-}
-.section-heading {
-  font-size: 1.3rem;
-  color: #ff66b2;
-  margin-bottom: 15px;
-}
 
-/* Fade-in animation with staggered delays */
+/* ANIMATION */
 .fade-in {
   opacity: 0;
   transform: translateY(30px);
   animation: fadeInUp 0.8s ease forwards;
 }
 
-/* Staggered animation delays */
-.profile-pic.fade-in {
-  animation-delay: 0.2s;
-}
-
-h1.fade-in {
-  animation-delay: 0.4s;
-}
-
-p.fade-in:first-of-type {
-  animation-delay: 0.6s;
-}
-
-.links.fade-in {
-  animation-delay: 0.8s;
-}
-
-.about.fade-in {
-  animation-delay: 1.0s;
-}
-
-.note.fade-in {
-  animation-delay: 1.2s;
-}
+.profile-pic.fade-in { animation-delay: 0.2s; }
+h1.fade-in { animation-delay: 0.4s; }
+p.fade-in:first-of-type { animation-delay: 0.6s; }
+.links.fade-in { animation-delay: 0.8s; }
+.about.fade-in { animation-delay: 1.0s; }
+.projects.fade-in { animation-delay: 1.2s; }
+.skills.fade-in { animation-delay: 1.4s; }
+.note.fade-in { animation-delay: 1.6s; }
 
 @keyframes fadeInUp {
   to {
     opacity: 1;
     transform: translateY(0);
   }
-}
-
-/* Optional: Add a subtle entrance animation to the container */
-.container.fade-in {
-  animation-delay: 0s;
 }
